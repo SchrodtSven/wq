@@ -1,0 +1,12 @@
+; cr.csv
+"Monat","Sitzungen","Sitzungen, in denen Artikel zum Warenkorb hinzugefügt wurden","Sitzungen, bei denen der Checkout erreicht wurde","Sitzungen, bei denen der Checkout abgeschlossen wurde","Conversion-Rate","Month (previous_period)","Sessions (previous_period)","Sessions with cart additions (previous_period)","Sessions that reached checkout (previous_period)","Sessions that completed checkout (previous_period)","Conversion rate (previous_period)"
+"datum","sess_cart","sess_co","sess_co_done","c_r","dat_prev","sess_prev","sess_cart_add_prev","sess_co_prev","sess_co_done_prev","cr_prev"
+
+;sessions.csv
+"Sitzungsland","Sitzungsort","Monat","Empfehlungsplattform","Landing-Page-URL","Durchschnittliche Sitzungsdauer","Seitenaufrufe pro Sitzung","Absprünge","Sitzungen, in denen Artikel zum Warenkorb hinzugefügt wurden","Sitzungen, bei denen der Checkout erreicht wurde","Sitzungen, bei denen der Checkout abgeschlossen wurde","Sitzungen"
+"sess_ctry","sess_loc","datum","sug_platform","landing_uri","session_duration","pages_per_sess","jump_offs","sess_cart_add","sess_co","sess_co_done","sessions"
+
+; umsatz
+"Monat","Bestellungen","Bruttoumsatz","Rabatte","Rückgaben","Nettoumsatz","Versandgebühren","Zollgebühren","Zusätzliche Gebühren","Steuern","Gesamtumsatz","Kunden","Month (previous_period)","Orders (previous_period)","Gross sales (previous_period)","Discounts (previous_period)","Returns (previous_period)","Net sales (previous_period)","Shipping charges (previous_period)","Duties (previous_period)","Additional fees (previous_period)","Taxes (previous_period)","Total sales (previous_period)","Customers (previous_period)"
+"datum","orders","gross_turns","discounts","returns","net_turns","shippings","duties","add_rates","taxes","total_turn","clients","datum_prev","orders_prev","gross_sales_prev","discounts_prev","returns_prev","net_turns_prev","shippings_prev","duties_prev","add_rates_prev","taxes_prev","total_turn_prev","clients_prev"
+

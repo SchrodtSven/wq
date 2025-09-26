@@ -1,0 +1,1 @@
+"datum","orders","gross_turns","discounts","returns","net_turns","shippings","duties","add_rates","taxes","total_turn","clients","datum_prev","orders_prev","gross_sales_prev","discounts_prev","returns_prev","net_turns_prev","shippings_prev","duties_prev","add_rates_prev","taxes_prev","total_turn_prev","clients_prev"
