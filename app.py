@@ -29,7 +29,7 @@ load_figure_template(["sandstone", "simplex", "minty_dark"])
 #dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates/dbc.min.css"
 
 #dbc_css = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-
+    
 
 app = Dash(
     __name__,

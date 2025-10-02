@@ -8,9 +8,11 @@ from dd import DD
 sub_title = "Analyse der Sitzungen"
 df = pd.read_csv('exporte/sessions.csv')
 df['datum'] = pd.to_datetime(df['datum'],format='%Y-%m-%d')
-#print(df.columns)
+
+df['Sitzung_min'] = round(df["session_duration"]/60, 2)
+print(df.columns)
 #fig_2 = fig = px.line(df_f, x="Jahr", y="Anzahl")
- 
+
 # Anfangsbelegung
 #tmp = list(df.columns)
 # Jahr ist obligatorisch (auf der X-Achse)

@@ -5,7 +5,7 @@ import pandas as pd
 import dash_ag_grid as dag
     
 from dd import DD
-
+    
 sub_title = DD.pages['Sales']
 df = pd.read_csv('output/sales_per_channel.csv')
 df['Tag'] = pd.to_datetime(df['Tag'],format='%Y-%m-%d')

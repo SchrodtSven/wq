@@ -1,0 +1,3 @@
+
+"Produkttitel","Produktvariantentitel","Produktvarianten-SKU","Inventareinheiten zu Beginn","Inventareinheiten zum Ende","Verkaufte Inventareinheiten","Verkaufsrate","Starting inventory units (previous_period)","Ending inventory units (previous_period)","Inventory units sold (previous_period)","Sell through rate (previous_period)"
+"prod_name","prod_var","prod_var_sku","invent_start","invent_end","sold_units","sell_rate","invent_start_prev","invent_end_prev","sold_units_prev","sell_rate_prev"

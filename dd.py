@@ -5,14 +5,14 @@
 class DD:
 
     pages = {
-        "Sessions": "Sitzungsanalyse",
+         "Sessions": "Sitzungsanalyse",
          "Sales": "Umsätze nach Vertriebskanal",
          "Upload" : "Dateiverwaltung"
     }
 
     col_transl = {
         "sess_ctry": "Land",
-        "sess_loc": "Ort",
+        "sess_loc": "Ort",  
         "datum": "Datum",
         "sug_platform": "Empfehlungsplattform",
         "landing_uri": "URI Landing Page",
@@ -23,6 +23,7 @@ class DD:
         "sess_co": "Sitzung: Check-Out erreicht",
         "sess_co_done": "Sitzung: Check-Out abgeschlossen",
         "sessions": "Sitzungen",
+        "Sitzung_min": "Sitzungsdauer[min.]",
     }
 
     session_y = ["jump_offs", "sess_cart_add", "sess_co", "sess_co_done", "sessions"]
