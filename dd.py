@@ -6,8 +6,9 @@ class DD:
 
     pages = {
          "Sessions": "Sitzungsanalyse",
-         "Sales": "Umsätze nach Vertriebskanal",
-         "Upload" : "Dateiverwaltung"
+         "Sales": "Umsätze n. Vertriebskan.",
+         "Upload" : "Dateiverwaltung",
+         "Products": "Produkte"
     }
 
     col_transl = {

@@ -21,6 +21,7 @@ print(df.columns)
 
 opt = [{"label": k, "value": k} for k in DD.session_y]
 start_val = DD.session_y
+start_val = ["sessions"]
 fig = px.line(df, x="datum", y=start_val)
 
 register_page(__name__)
@@ -39,7 +40,16 @@ layout = html.Div(
     [
         html.H3(sub_title),
         html.H4("Sitzungsverfolgung"),
-        dag.AgGrid(
+        html.Div(className='custom-dropdown-style-2', children=[
+        dcc.Dropdown(
+            id="controls-and-check-item",
+            options=opt,
+            value=start_val,
+            multi=True,
+            #style={"backgroundColor": "black"},
+        )]),
+        dcc.Graph(figure=fig, id="controls-and-graph"),
+         dag.AgGrid(
             id="main_grid_basic",
             rowData=df.to_dict("records"),
             columnDefs=[
@@ -49,13 +59,6 @@ layout = html.Div(
             columnSize="responsiveSizeToFit",
             dashGridOptions={"pagination": True},
         ),
-        dcc.Dropdown(
-            id="controls-and-check-item",
-            options=opt,
-            value=start_val,
-            multi=True,
-        ),
-        dcc.Graph(figure=fig, id="controls-and-graph"),
         
     ]
 )

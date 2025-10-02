@@ -8,14 +8,8 @@ from dd import DD
     
 sub_title = DD.pages['Sales']
 df = pd.read_csv('output/sales_per_channel.csv')
-df['Tag'] = pd.to_datetime(df['Tag'],format='%Y-%m-%d')
-#print(df.columns)
-#fig_2 = fig = px.line(df_f, x="Jahr", y="Anzahl")
- 
-# Anfangsbelegung
-#tmp = list(df.columns)
-# Jahr ist obligatorisch (auf der X-Achse)
-#del tmp[0]
+df['Tag'] = pd.to_datetime(df['Tag'], format='%Y-%m-%d')
+
 
 colz = ["Bestellungen","Bruttoumsatz","Rabatte","Rückgaben","Nettoumsatz","Versandgebühren","Steuern","Gesamtumsatz"]
 strt_colz = ["Nettoumsatz"]
@@ -41,6 +35,16 @@ def update_graph(col_chosen):
 layout = html.Div(
     [
         html.H3(sub_title),
+        
+        html.Div(className='custom-dropdown-style', children=[dcc.Dropdown(
+            id="sales-sales-controls-and-check-item",
+            options=opt,
+            value=strt_colz,
+            multi=True,
+            className='dropdown-class',
+            style={'background-color':'#011213'}
+        )]),
+        dcc.Graph(figure=fig, id="sales-sales-controls-and-graph"),
         dag.AgGrid(
             id="main_grid_basic",
             rowData=df.to_dict("records"),
@@ -51,13 +55,6 @@ layout = html.Div(
             columnSize="responsiveSizeToFit",
             dashGridOptions={"pagination": True},
         ),
-        dcc.Dropdown(
-            id="sales-sales-controls-and-check-item",
-            options=opt,
-            value=strt_colz,
-            multi=True,
-        ),
-        dcc.Graph(figure=fig, id="sales-sales-controls-and-graph"),
         
     ]
 )

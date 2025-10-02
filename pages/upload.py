@@ -17,7 +17,7 @@ layout = html.Div(
         html.H3(sub_title),
         dcc.Upload(
             id="upload-data",
-            children=html.Div(["Drag and Drop or ", html.A("Select Files")]),
+            children=html.Div(["Drag and Drop or ", html.A("Dateiauswahl")]),
             style={
                 "width": "100%",
                 "height": "60px",
@@ -27,6 +27,7 @@ layout = html.Div(
                 "borderRadius": "5px",
                 "textAlign": "center",
                 "margin": "10px",
+                "backgroundColor" : "white",
             },
             # Allow multiple files to be uploaded
             multiple=True,
