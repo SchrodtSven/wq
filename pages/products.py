@@ -21,21 +21,14 @@ colz = ["prod_name","invent_start","invent_end","sold_units","sell_rate"]
 strt_colz = ["prod_name"]
  
 #opt = [{"label": k, "value": k} for k in colz]
- 
 #fig = px.line(df, x="Tag", y=strt_colz, color='Vertriebskanal')
 
 
 register_page(__name__)
 
- 
- 
-
-
 layout = html.Div(
     [
         html.H3(sub_title),
-        
-        
         dag.AgGrid(
             id="main_grid_basic",
             rowData=df.to_dict("records"),
